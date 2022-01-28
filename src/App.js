@@ -31,6 +31,7 @@ function App() {
 				<div className= {classes.heading__wrapper} >
 					<h1 ref = {iAmRef} className= {classes.iam}>I'm</h1>
 					<h1 ref = {headingRef} className={classes.heading}>Karan Batavia</h1>
+					<div className = {classes.heading__border} ></div>
 				</div>
 			</div>
 		</Layout>
