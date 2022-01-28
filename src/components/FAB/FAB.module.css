@@ -1,0 +1,54 @@
+.fab__main {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    background: #1778F2;
+    width: 5vw;
+    height: 5vw;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fab__main:active {
+    transform: translateY(5px);
+}
+
+.fab__icon {
+    color: white;    
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    right: 105%;
+    position: absolute;
+    z-index: 1;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.fab__main:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .fab__main {
+        width: 15vw;
+        height: 15vw;
+        right: 3vh;
+        bottom: 3vh;
+    }
+}
+
+
