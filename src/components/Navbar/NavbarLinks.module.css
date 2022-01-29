@@ -1,0 +1,24 @@
+.link {
+    margin: 0 .5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+
+.link:hover .link__underline {
+    width: 100%;
+    background: black;
+    height: 5px;
+    animation: borderExpand 125ms ease-in-out;
+}
+
+@keyframes borderExpand {
+    from {
+        width: 0%;
+    } to {
+        width: 100%;
+    }
+}
+

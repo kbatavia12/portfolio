@@ -18,13 +18,7 @@
     width: 10%;
 }
 
-.navbar__links {
-    margin: 0 .5em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
-    cursor: pointer;
-    transition: all 1s ease-in-out;
-}
+
 
 .navbar__links_container {
 

@@ -1,14 +1,15 @@
 import React from 'react';
 import classes from './Navbar.module.css';
+import NavbarLinks from './NavbarLinks';
 
 const Navbar = () => {
     return (
         <div className={classes.navbar}>
-            
+
             <div className={classes.navbar__left}>
-                <p className={classes.navbar__links} >Work</p>
-                <p className={classes.navbar__links} >About</p>
-                <p className={classes.navbar__links} >Contact</p>
+                <NavbarLinks linkName="About" />
+                <NavbarLinks linkName="Work" />
+                <NavbarLinks linkName="Contact" />
             </div>
 
             <div className={classes.navbar__center}>
@@ -17,9 +18,9 @@ const Navbar = () => {
 
 
             <div className={classes.navbar__right}>
-                <p className={classes.navbar__links} >I1</p>
-                <p className={classes.navbar__links} >I2</p>
-                <p className={classes.navbar__links} >I3</p>
+                <NavbarLinks linkName="I1" />
+                <NavbarLinks linkName="I2" />
+                <NavbarLinks linkName="I3" />
             </div>
 
         </div>
