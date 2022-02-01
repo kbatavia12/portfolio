@@ -24,12 +24,6 @@ const About = () => {
         }
 
 
-        return () => {
-            PPRef.current.classList.remove(classes.animated_image);
-            aboutTextRef.current.classList.remove(classes.animated_text);
-        }
-
-
     }, [isVisible])
 
 
@@ -38,11 +32,11 @@ const About = () => {
         <div id = "about" className={classes.about} >
             {/* <div></div> */}
             <div  ref={aboutContainerRef} className={classes.about__pp_container} >
-                <img ref = {PPRef} className={classes.about__pp} src={PP} loading="lazy" />
+                <img ref = {PPRef} className={classes.about__pp} src={PP} />
             </div>
             <div ref = {aboutTextRef} className={classes.about__text_container}>
                 <h1 className={classes.about__heading} >About</h1>
-                <p className={classes.about__text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, aut perferendis corrupti impedit iste voluptate doloremque voluptas sint, consectetur fuga blanditiis mollitia praesentium laborum ullam nobis totam amet asperiores aspernatur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, aut perferendis corrupti impedit iste voluptate doloremque voluptas sint, consectetur fuga blanditiis mollitia praesentium laborum ullam nobis totam amet asperiores aspernatur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, aut perferendis corrupti impedit iste voluptate doloremque voluptas sint, consectetur fuga blanditiis mollitia praesentium laborum ullam nobis totam amet asperiores aspernatur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, aut perferendis corrupti impedit iste voluptate doloremque voluptas sint, consectetur fuga blanditiis mollitia praesentium laborum ullam nobis totam amet asperiores aspernatur?</p>
+                <p className={classes.about__text}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, aut perferendis corrupti impedit iste voluptate doloremque voluptas sint, consectetur fuga blanditiis mollitia praesentium laborum ullam nobis totam amet asperiores aspernatur?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, aut perferendis corrupti impedit iste voluptate doloremque voluptas sint, consectetur fuga blanditiis mollitia praesentium laborum ullam nobis totam amet asperiores aspernatur?</p>
             </div>
         </div>
         </Layout>

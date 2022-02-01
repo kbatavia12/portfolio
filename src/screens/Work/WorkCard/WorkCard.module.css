@@ -1,0 +1,48 @@
+.workcard {
+    width: 20%;
+    height: fit-content;
+    border: 1px solid black;
+}
+
+.workcard__image_container {
+    height: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.workcard__image {
+    width: 90%;
+    height: 90%;
+}
+
+
+.workcard__text_container {
+    height: 50%;
+    display: grid;
+    place-items: center;
+    padding: .5em;
+}
+
+.workcard__text {
+    text-align: justify;
+}
+
+h1:hover .heading__underline {
+    width: 100%;
+    background: black;
+    height: 5px;
+    animation: borderExpand 125ms ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .workcard {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .workcard__text_container {
+        padding: 0 .5em;
+    }
+}
